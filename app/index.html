@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/index1.min.css">
+</head>
+<body>
+    <!-- header 区域 -->
+	<header class="header"></header>
+
+	<!-- content 区域 -->
+	<div class="content"></div>
+
+	<!-- footer 区域 -->
+	<footer></footer>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/sea.js"></script>
+	<script src="js/underscore.js"></script>
+	<script>
+		seajs.config({
+			base:'./'
+		});
+		seajs.use(['js/home.js'],function(a){
+			a.initPage();
+		})
+	</script>
+</body>
+</html>
